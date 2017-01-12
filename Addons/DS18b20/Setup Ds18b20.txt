@@ -1,0 +1,25 @@
+
+Goto :
+>sudo nano /boot/config.txt
+
+Add
+>dtoverlay=w1-gpio-pullup,gpiopin=XX
+
+Load Driver once
+
+>sudo modprobe w1-gpio
+>sudo modprobe w1-therm
+
+Load driver after boot 
+
+>sudo nano /etc/modules 
+
+Add: 
+>w1-gpio
+>w1-therm
+
+Goto :
+
+>cd /sys/bus/w1/devices 
+
+>ls
