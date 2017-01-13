@@ -50,11 +50,17 @@ Exercise 6 Network Communucation
 Exercise 7 Websocket
 
 Exercise 8 OpenCV Color Detect
+
 Exercise 9 OpenCV Pattern Matching
+
 Exercise 10 Tag WebUI
+
 Exercise 11 WebUI ThinClient
+
 Exercise 12 Webpanel SVG-HTML5
+
 Exercise 13 Share Library Development
+
 Exercise 14 WiringPi Library Development
 
 ------------------------------------------------------------------
