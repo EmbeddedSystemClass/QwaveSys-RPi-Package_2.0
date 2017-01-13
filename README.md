@@ -74,3 +74,6 @@ Exercise 14 WiringPi Library Development
 ------------------------------------------------------------------
 Created by `Amornthep Phunsin` and `Supawat Armart` (Q-Wave Systems Co.,Ltd)
 Contact : `"amornthep@qwavesys.com"`
+
+Donate -> Supporting us by donate via Paypal -> ""amornthep@qwavesys.com""
+https://www.paypal.me/qwavesystems
