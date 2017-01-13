@@ -1,4 +1,4 @@
-#QwaveSys RPi Package for LabVIEW 2.0
+#QwaveSys RPi Package 2.0 for LabVIEW.
 
 If you find this package is useful, please consider supporting it with a donation. 
 https://www.paypal.me/qwavesystems
