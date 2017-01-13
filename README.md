@@ -13,9 +13,9 @@ Anyone can get started with the [LabVIEW 45-Day Evaluation](http://ftp.ni.com/su
 
 QwaveSys RPi Package is a peripheral VIs provides enhance functions over LINX 3.0 standard library. it's an easy to use VIs and provided many examples. It's tested with Raspberry Pi 2B/3B and some functions also works with BBB and Orange Pi (H3) boards.
 
-**Initial Released 2.0.0.18
+**Initial Released 2.0.0.18**
 
-**Add-ons Library:
+**Add-ons Library:**
 
 -ADC_PCF8591 (Analog ADC: 4Ch AI, 1 Ch for AO)
 
@@ -31,11 +31,11 @@ QwaveSys RPi Package is a peripheral VIs provides enhance functions over LINX 3.
 
 -WiringPi (GPIO library)
 
-**Examples :
+**Examples :**
 
-*Exercises located at -> LabVIEW 2014\vi.lib\Q-Wave Systems\QwaveSys RPi Package 2.0\Exercises
+**Exercises located at -> LabVIEW 2014\vi.lib\Q-Wave Systems\QwaveSys RPi Package 2.0\Exercises**
 
-*Solutions located at -> LabVIEW 2014\vi.lib\Q-Wave Systems\QwaveSys RPi Package 2.0\Solutions
+**Solutions located at -> LabVIEW 2014\vi.lib\Q-Wave Systems\QwaveSys RPi Package 2.0\Solutions**
 
 -Exercise 1 GPIO
 
