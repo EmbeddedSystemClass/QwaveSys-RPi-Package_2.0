@@ -14,25 +14,41 @@ Initial Released
 2.0.0.18
 
 Add-ons Library:
+
 -ADC_PCF8591 (Analog ADC: 4Ch AI, 1 Ch for AO)
+
 -DHTxx (DHT11,DHT22 Temperature sensor)
+
 -DS18b20 (1-Wire Digital temperature sensor)
+
 -OpenCV (Based on OpenCV 3.0)
+
 -USBCamera (USB driver)
+
 -WebSockets API (IE) * Created by "Sam Sharp - Intelligent Energy"
+
 -WiringPi (GPIO library)
 
 Examples :
+
 Exercises located at -> LabVIEW 2014\vi.lib\Q-Wave Systems\QwaveSys RPi Package 2.0\Exercises
+
 Solutions located at -> LabVIEW 2014\vi.lib\Q-Wave Systems\QwaveSys RPi Package 2.0\Solutions
 
 Exercise 1 GPIO
+
 Exercise 2 Temp Sensor
+
 Exercise 3 ADC
+
 Exercise 4 Camera
+
 Exercise 5 Webservice
+
 Exercise 6 Network Communucation
+
 Exercise 7 Websocket
+
 Exercise 8 OpenCV Color Detect
 Exercise 9 OpenCV Pattern Matching
 Exercise 10 Tag WebUI
