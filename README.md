@@ -39,7 +39,7 @@ https://drive.google.com/file/d/0B5DiaJTnM12RdVBRNl8wOVJ3TzA/view
 
 `sudo schroot –c labview`
 
-**4.Check the architecture config file.**
+**4.Check the architecture th a config file.**
 
 `cat /etc/opkg/arch.conf`
 
