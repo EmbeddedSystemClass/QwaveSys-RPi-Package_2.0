@@ -39,15 +39,15 @@ https://drive.google.com/file/d/0B5DiaJTnM12RdVBRNl8wOVJ3TzA/view
 
 `sudo schroot –c labview`
 
-**4.Check the architecture th a config file.**
+**4.Check the supported architecture.**
 
 `cat /etc/opkg/arch.conf`
 
-**5.Add “Raspberry Pi 2” to architecture config file.**
+**5.Add “Raspberry Pi 2” architecture to the config file.**
 
 `echo "arch raspberrypi2 71" | tee -a /etc/opkg/arch.conf`
 
-**6.Backup the original feeds source file.**
+**6.Backup the original feeds source file.** (feeds.labviewmakerhub.com)
 
 `mv /etc/opkg/base-feeds.conf /etc/opkg/base-feeds.conf_bak`
 
