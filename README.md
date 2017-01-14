@@ -23,9 +23,39 @@ QwaveSys RPi Package is a peripheral VIs provides enhance functions over LINX 3.
 2.Download QwaveSys RPi Image. Refer the link below. The image is based on "2016-09-23-Raspbian-Jessie WITH PIXEL".
 **https://drive.google.com/file/d/0B5DiaJTnM12RdVBRNl8wOVJ3TzA/view**
 
-3.Navigate to "..\vi.lib\Q-Wave Systems\QwaveSys RPi Package 2.0\Solutions". There are a lot shipped solutions for you.
+3.Navigate to "..\vi.lib\Q-Wave Systems\QwaveSys RPi Package 2.0\Solutions". There are a lots of shipped solutions for you.
 
 ![](http://ftp.qwavesys.com/tmp_pics/14570755_1133753453326692_5611632336154060828_o.png)
+
+#Manual Process to install necessary packages: (For Advanced users ONLY)
+
+1.Download a official "RASPBIAN JESSIE WITH PIXEL" from https://www.raspberrypi.org/downloads/raspbian/
+
+2.Install LINX 3.0. (LabVIEW run-time: (14.x.xx)) Refer to this turterial https://youtu.be/zsX0rJQGFqQ
+
+3.Login to LabVIEW chroot
+
+`sudo schroot –c labview`
+
+4.Check the architecture config file.
+
+`cat /etc/opkg/arch.conf`
+
+5.Add “Raspberry Pi 2” to architecture config file.
+
+`echo "arch raspberrypi2 71" | tee -a /etc/opkg/arch.conf`
+
+6.Backup the original feeds source file.
+
+`mv /etc/opkg/base-feeds.conf /etc/opkg/base-feeds.conf_bak
+
+7.Add “QWAVESYS” feeds source server, (http://ftp.qwavesys.com/ipk/)
+
+`echo "src/gz uri-all-0 http://ftp.qwavesys.com/ipk/all" | tee -a /etc/opkg/base-feeds.conf`
+
+`echo "src/gz uri-armv7a-vfp-0 http://ftp.qwavesys.com/ipk/armv7a-vfp" | tee -a /etc/opkg/base-feeds.conf`
+
+`echo "src/gz uri-generic_armv7a-0 http://ftp.qwavesys.com/ipk/raspberrypi2" | tee -a /etc/opkg/base-feeds.conf`
 
 #Released Notes:
 
