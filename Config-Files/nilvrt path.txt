@@ -1,0 +1,1 @@
+/srv/chroot/labview/usr/local/natinst/etc/init.d
