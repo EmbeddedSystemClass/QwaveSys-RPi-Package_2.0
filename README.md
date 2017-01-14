@@ -17,45 +17,71 @@ QwaveSys RPi Package is a peripheral VIs provides enhance functions over LINX 3.
 
 #Installation Steps.
 
-1.Download and Install "q_wave_systems_lib_qwavesys_rpi_package-2.0.0.18.vip"
-**https://github.com/QWaveSystems/QwaveSys-RPi-Package_2.0/blob/master/q_wave_systems_lib_qwavesys_rpi_package-2.0.0.18.vip**
+**1.Download and Install "q_wave_systems_lib_qwavesys_rpi_package-2.0.0.18.vip"
 
-2.Download QwaveSys RPi Image. Refer the link below. The image is based on "2016-09-23-Raspbian-Jessie WITH PIXEL".
-**https://drive.google.com/file/d/0B5DiaJTnM12RdVBRNl8wOVJ3TzA/view**
+https://github.com/QWaveSystems/QwaveSys-RPi-Package_2.0/blob/master/q_wave_systems_lib_qwavesys_rpi_package-2.0.0.18.vip
 
-3.Navigate to "..\vi.lib\Q-Wave Systems\QwaveSys RPi Package 2.0\Solutions". There are a lots of shipped solutions for you.
+**2.Download QwaveSys RPi Image. Refer the link below. The image is based on "2016-09-23-Raspbian-Jessie WITH PIXEL".
+
+https://drive.google.com/file/d/0B5DiaJTnM12RdVBRNl8wOVJ3TzA/view
+
+**3.Navigate to "..\vi.lib\Q-Wave Systems\QwaveSys RPi Package 2.0\Solutions". There are a lots of shipped solutions for you.
 
 ![](http://ftp.qwavesys.com/tmp_pics/14570755_1133753453326692_5611632336154060828_o.png)
 
 #Manual Process to install necessary packages: (For Advanced users ONLY)
 
-1.Download a official "RASPBIAN JESSIE WITH PIXEL" from https://www.raspberrypi.org/downloads/raspbian/
+**1.Download a official "RASPBIAN JESSIE WITH PIXEL" from https://www.raspberrypi.org/downloads/raspbian/
 
-2.Install LINX 3.0. (LabVIEW run-time: (14.x.xx)) Refer to this turterial https://youtu.be/zsX0rJQGFqQ
+**2.Install LINX 3.0. (LabVIEW run-time: (14.x.xx)) Refer to this turterial https://youtu.be/zsX0rJQGFqQ
 
-3.Login to LabVIEW chroot
+**3.Login to LabVIEW chroot
 
 `sudo schroot –c labview`
 
-4.Check the architecture config file.
+**4.Check the architecture config file.
 
 `cat /etc/opkg/arch.conf`
 
-5.Add “Raspberry Pi 2” to architecture config file.
+**5.Add “Raspberry Pi 2” to architecture config file.
 
 `echo "arch raspberrypi2 71" | tee -a /etc/opkg/arch.conf`
 
-6.Backup the original feeds source file.
+**6.Backup the original feeds source file.
 
-`mv /etc/opkg/base-feeds.conf /etc/opkg/base-feeds.conf_bak
+`mv /etc/opkg/base-feeds.conf /etc/opkg/base-feeds.conf_bak`
 
-7.Add “QWAVESYS” feeds source server, (http://ftp.qwavesys.com/ipk/)
+**7.Add “QWAVESYS” feeds source server, (http://ftp.qwavesys.com/ipk/)
 
 `echo "src/gz uri-all-0 http://ftp.qwavesys.com/ipk/all" | tee -a /etc/opkg/base-feeds.conf`
 
 `echo "src/gz uri-armv7a-vfp-0 http://ftp.qwavesys.com/ipk/armv7a-vfp" | tee -a /etc/opkg/base-feeds.conf`
 
 `echo "src/gz uri-generic_armv7a-0 http://ftp.qwavesys.com/ipk/raspberrypi2" | tee -a /etc/opkg/base-feeds.conf`
+
+**8.Install packages from QWAVESYS server.
+
+`opkg update`
+
+`opkg install python`
+
+`opkg install opencv`
+
+`opkg install packagegroup-core-buildessential`
+
+`opkg install wiringpi`
+
+`opkg install wiringpi-dev`
+
+**9.Copy the shared library (.so) files from "Shared-Library" on this repo to `/srv/chroot/labview/usr/lib`. *Required only ".so" files.
+
+**10.Modified the ".profile" config file , located at "/home/pi".**
+Refer to "Config-Files" folder on this repo.
+
+**11.Modified the "nilvrt" file, Located at "/srv/chroot/labview/usr/local/natinst/etc/init.d", This will allow export DISPLAY inside LV chroot to RPi display, Default =:0.0.**
+Refer to "Config-Files" folder on this repo. 
+
+**12.Navigate to "..\vi.lib\Q-Wave Systems\QwaveSys RPi Package 2.0\Solutions". There are a lots of shipped solutions for you.
 
 #Released Notes:
 
