@@ -21,19 +21,19 @@ QwaveSys RPi Package is a peripheral VIs provides enhance functions over LINX 3.
 
 https://github.com/QWaveSystems/QwaveSys-RPi-Package_2.0/blob/master/q_wave_systems_lib_qwavesys_rpi_package-2.0.0.18.vip
 
-**2.Download QwaveSys RPi Image. Refer the link below. The image is based on "2016-09-23-Raspbian-Jessie WITH PIXEL".**
+**2.Download QwaveSys RPi Image. Refer the link below.** The image is based on **"2016-09-23**-Raspbian-Jessie WITH PIXEL".
 
 https://drive.google.com/file/d/0B5DiaJTnM12RdVBRNl8wOVJ3TzA/view
 
-**3.Navigate to "..\vi.lib\Q-Wave Systems\QwaveSys RPi Package 2.0\Solutions". There are a lots of shipped solutions for you.**
+**3.Navigate to "..\vi.lib\Q-Wave Systems\QwaveSys RPi Package 2.0\Solutions".** There are a lots of shipped solutions for you.
 
 ![](http://ftp.qwavesys.com/tmp_pics/14570755_1133753453326692_5611632336154060828_o.png)
 
 #Manual Process to install necessary packages: (For Advanced users ONLY)
 
-**1.Download a official "RASPBIAN JESSIE WITH PIXEL" from https://www.raspberrypi.org/downloads/raspbian/**
+**1.Download a official "RASPBIAN JESSIE WITH PIXEL"** from https://www.raspberrypi.org/downloads/raspbian/
 
-**2.Install LINX 3.0. (LabVIEW run-time: (14.x.xx)) Refer to this turterial https://youtu.be/zsX0rJQGFqQ**
+**2.Install LINX 3.0. (LabVIEW run-time: (14.x.xx))** Refer to this turterial https://youtu.be/zsX0rJQGFqQ
 
 **3.Login to LabVIEW chroot**
 
@@ -51,7 +51,7 @@ https://drive.google.com/file/d/0B5DiaJTnM12RdVBRNl8wOVJ3TzA/view
 
 `mv /etc/opkg/base-feeds.conf /etc/opkg/base-feeds.conf_bak`
 
-**7.Add “QWAVESYS” feeds source server, (http://ftp.qwavesys.com/ipk/)**
+**7.Add “QWAVESYS” feeds source server,** (http://ftp.qwavesys.com/ipk/)
 
 `echo "src/gz uri-all-0 http://ftp.qwavesys.com/ipk/all" | tee -a /etc/opkg/base-feeds.conf`
 
