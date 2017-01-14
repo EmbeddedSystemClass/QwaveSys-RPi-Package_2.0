@@ -20,10 +20,8 @@ QwaveSys RPi Package is a peripheral VIs provides enhance functions over LINX 3.
 1. Download and Install "q_wave_systems_lib_qwavesys_rpi_package-2.0.0.18.vip"
 **https://github.com/QWaveSystems/QwaveSys-RPi-Package_2.0/blob/master/q_wave_systems_lib_qwavesys_rpi_package-2.0.0.18.vip**
 
-2. Download QwaveSys RPi Image. Refer the link below. 
+2. Download QwaveSys RPi Image. Refer the link below. The image is based on "2016-09-23-Raspbian-Jessie WITH PIXEL".
 **https://drive.google.com/file/d/0B5DiaJTnM12RdVBRNl8wOVJ3TzA/view**
-
-**Latest QwaveSys Raspberry Pi Image can be download at :** (Based on 2016-09-23-Raspbian-Jessie WITH PIXEL)
 
 ![](http://ftp.qwavesys.com/tmp_pics/14570755_1133753453326692_5611632336154060828_o.png)
 
