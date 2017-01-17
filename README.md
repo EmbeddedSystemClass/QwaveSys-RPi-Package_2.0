@@ -78,6 +78,8 @@ We only tested with "2016-09-23-Raspbian-Jessie WITH PIXEL ONLY.
 
 **9.Copy the shared library (.so) files from "Shared-Library" on this repo to `/srv/chroot/labview/usr/lib`.** *Required only ".so" files.
 
+**Steps #10 and #11 are OPTIONAL, its only for somes examples the export the UI to RasPi dispaly** For example: "Exercise 4.2 Debug WebCam on Display.vi", **But you can use Web UI instead of Dispaly** For example: "Exercise 7.1 Websocket Webcam.vi" is publish image from webcam to the webpage using Websocket.
+
 **10.Modified the ".profile" config file , located at "/home/pi".**
 Refer to "Config-Files" folder on this repo.
 
