@@ -70,6 +70,8 @@ We only tested with "2016-09-23-Raspbian-Jessie WITH PIXEL ONLY.
 
 `opkg install opencv`
 
+`opkg install userland`
+
 `opkg install packagegroup-core-buildessential`
 
 `opkg install wiringpi`
