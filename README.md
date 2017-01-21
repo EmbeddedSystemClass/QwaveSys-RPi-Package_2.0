@@ -34,9 +34,9 @@ https://drive.google.com/file/d/0B5DiaJTnM12RdVBRNl8wOVJ3TzA/view
 
 **1.Download a official "RASPBIAN JESSIE WITH PIXEL"** from https://www.raspberrypi.org/downloads/raspbian/
 
-We only tested with "2016-09-23-Raspbian-Jessie WITH PIXEL ONLY.
+We tested with "2016-09-23-Raspbian-Jessie WITH PIXEL ONLY.
 
-**2.Install LINX 3.0. (LabVIEW run-time: (14.x.xx))** Refer to this turterial https://youtu.be/zsX0rJQGFqQ
+**2.Install LINX 3.0. (LabVIEW run-time: (14.x.xx))** Refer to this tuterial https://youtu.be/zsX0rJQGFqQ
 
 **3.Login to LabVIEW chroot**
 
